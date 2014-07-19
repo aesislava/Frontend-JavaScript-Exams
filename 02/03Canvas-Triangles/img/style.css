@@ -1,9 +1,15 @@
 body {
 	text-align: center;
 	font: 'Helvetica';
-	background-image: url("blurry.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 110%!important;
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(top, #cedce7 0%, #596a72 73%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(73%,#596a72)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cedce7 0%,#596a72 73%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cedce7 0%,#596a72 73%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cedce7 0%,#596a72 73%); /* IE10+ */
+	background: linear-gradient(to bottom, #cedce7 0%,#596a72 73%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */	
 	margin: 0 auto;
 	padding: 0;
 }
@@ -18,17 +24,24 @@ canvas {
 }
 #colorPick {
 	height: 25px;
-	width: 22px;
-	padding: 0;
-	margin: 0;
-	border: none;
+	width: 25px;
+	padding: 0px;
+	margin: 0px;
+	border: medium none;
 	border-radius: 2px;
 	vertical-align: top;
 	cursor: pointer;
+	position: relative;
+	left: 2px;
+	border-style: outset;
+	border-color: white;
 }
 #clear {
 	height: 25px;
 	vertical-align: top;
+}
+#help {
+	height: 25px;
 }
 #controls {
 	list-style: none;
@@ -49,4 +62,7 @@ canvas {
 	height: 33px;
 	position: relative;
 	left: 2px;
+}
+.prompted {
+	float: none!important;
 }
