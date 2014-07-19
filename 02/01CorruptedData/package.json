@@ -1,0 +1,19 @@
+{
+  "name": "01CorruptedData",
+  "version": "0.0.0",
+  "description": "find and return dublicates in json file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aesislava/Frontend-JavaScript-Exams/tree/master/02/01CorruptedData.git"
+  },
+  "keywords": [
+    "json",
+    "corrupted"
+  ],
+  "author": "Desislava Angelova",
+  "license": "MIT"
+}
